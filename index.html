@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bigger Picture</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="main" style="max-width:1400px; margin:0 auto;">
+        <div class="header">
+            <h1>Mosaic of Movements: ARTistic History Visualized</h1>
+            <h2>Custom Visualisation</h2>
+        </div>
+    
+        <div class="intro">
+            <p>This visualization transforms individual artworks into a mosaic forming the letters <b>ART</b>. Artworks are grouped by <b>art movement</b> (see legend for colors).</p>
+            <p>Give it sometime to load all the images</p>
+        </div>
+        
+
+        <div id="viz">
+        </div>
+        <div class="box">
+            <div id="leg">
+            </div>
+        </div>
+        <div class="tip"></div>
+        
+        <div class="info">
+            <div style="border-top: 1px solid ; margin: 15px 0; padding-top: 15px;">
+                <h3>Design Details</h3>
+                <p><b>Marks:</b> Artwork images arranged to form the word "ART" with chronological organization from left to right.</p>
+                <p><b>Channels:</b> 
+                 <ul>
+                 <li>Color overlay - Represents art movement (different colors for different movements)</li>
+                <li>Gold dot - Indicates especially high-priced artworks</li>
+                </ul>
+                </p>
+                <p><b>Interactions:</b>
+                 <ul>
+                <li>Hover - Shows detailed tooltip with title, artist, year, price, and movement</li>
+                 <li>Hover over an artist - Highlights all artworks by the same artist</li>
+                 <li>Click - Highlights all artworks by the same artist, connecting them with yellow lines and keeping the highlight in place</li>
+                 <ul>
+                     <li>Click outside to remove highlighting</li>
+                </ul>
+                 <li>Double-click - Opens full-screen browsing mode to explore all artworks by that artist</li>
+                    </ul>
+                </p>
+                
+                <h3>Custom Visualization Category</h3>
+                <p>This visualization falls into the novel category because it creates a unique representation by combining:
+                    <ol>
+                     <li>Text-based layout generation using canvas drawing</li>
+                <li>Chronological data arrangement within a typographic structure</li>
+                    <li>Artist relationship highlighting with interactive connection lines</li>
+                   
+                    </ol>
+                    Rather than modifying an existing chart type, this visualization was built from scratch to create a new way of exploring art collections that reveals temporal, stylistic, and artist connections simultaneously.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modalImg" id="popupImg">
+        <div id="caption" class="caption"></div>
+    </div>
+
+    <canvas id="canvas"></canvas>
+    <script src="main.js"></script>
+</body>
+</html> 

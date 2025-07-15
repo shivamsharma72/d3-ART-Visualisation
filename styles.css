@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background: black;
+  color: white;
+  font-family: "Arial", sans-serif;
+}
+.main {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+.intro {
+  text-align: center;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+}
+.info {
+  text-align: left;
+  max-width: 800px;
+  margin: 40px auto;
+  line-height: 1.6;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid grey;
+}
+#viz {
+  width: 100%;
+  height: 75vh;
+  background: black;
+  border: 3px solid grey;
+  margin: 0 auto;
+  position: relative;
+}
+#canvas {
+  display: none;
+}
+
+.artwork {
+  transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.4s ease;
+  position: absolute;
+  border: none;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.15);
+  background-color: #222;
+  opacity: 1;
+}
+.img-container {
+  transition: transform 0.3s ease, z-index 0.1s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.img-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+.artwork:hover {
+  transform: scale(1.15);
+  z-index: 100;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+.price-dot {
+  background-color: gold;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.tip {
+  position: absolute;
+  padding: 10px;
+  background: black;
+  color: white;
+  border: 1px solid white;
+  font-size: 14px;
+  opacity: 0;
+  z-index: 1000;
+  min-width: 150px;
+}
+
+.tip-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.tip-artist {
+  font-style: italic;
+  margin-bottom: 5px;
+}
+.tip-details {
+  font-size: 12px;
+}
+.tip-price {
+  font-weight: bold;
+  color: gold;
+}
+.box {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #222;
+  border: 1px solid #444;
+}
+
+#leg {
+  display: block;
+}
+.box-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.box-section {
+  padding: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.movement-box {
+  width: 100%;
+}
+.price-box {
+  width: 150px;
+}
+.box-item {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+.price-box-item {
+  display: block;
+  margin-bottom: 5px;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nav button {
+  padding: 8px 15px;
+  background-color: grey;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.time-line {
+  stroke: rgba(255, 255, 255, 0.3);
+  stroke-width: 2.5px;
+  stroke-dasharray: 6, 4;
+}
+.time-label {
+  fill: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  font-weight: bold;
+}
+.time-tick {
+  fill: rgba(255, 255, 255, 0.9);
+  width: 3px;
+  height: 8px;
+}
