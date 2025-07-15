@@ -18,6 +18,8 @@ This folder contains the code and data for a D3.js-based data visualization proj
 
 ### Interactions
 
+![Description](hovering.png)
+
 - **Hover:** Displays a detailed tooltip with the artwork's title, artist, year, price, and movement.
 - **Hover over an artist:** Highlights all artworks by the same artist.
 - **Click:** Highlights all artworks by the same artist, connects them with yellow lines, and keeps the highlight active.
