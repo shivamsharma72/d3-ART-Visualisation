@@ -1,7 +1,7 @@
 # Art Dataset Visualization
 
 ![Description](final.gif)
-This folder contains the code and data for a D3.js-based data visualization project focused on analyzing an art dataset. The project was developed as part of a data visualization course assignment.
+This folder contains the code and data for a D3.js-based data visualization project focused on analyzing an art dataset. This is a novel way of visualising art data which is inspired from Horrified visualisation made by : Mohamad A. Waked.
 
 ## Design Details
 
@@ -77,5 +77,3 @@ This visualization is considered **novel** because it:
 - Shivam Sharma
 
 ---
-
-Feel free to explore, modify, and extend the visualization for your own analysis!
