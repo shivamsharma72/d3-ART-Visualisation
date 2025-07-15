@@ -1,7 +1,6 @@
-![Description](result.png)
-
 # Art Dataset Visualization
 
+![Description](final.gif)
 This folder contains the code and data for a D3.js-based data visualization project focused on analyzing an art dataset. The project was developed as part of a data visualization course assignment.
 
 ## Design Details
